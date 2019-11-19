@@ -3,32 +3,30 @@
 <head>
        <title>
        Nauka programowania</title>
-       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-       <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-       <link rel="stylesheet" href="{% static 'css/blog.css' %}">
    </head>
+
 <body>
-  <div>
+<style>
+{background-color: coral;
+}
 
-          <center><h1><a href="">Naucz się jak programować</a></h1></center>
-    <h2>
+</style>
 
-    <center><p>Aplikacja do nauki programowania</p></center>
-  </div>
   <div>
-  <br>
-  <li><a href='C:\Users\TEMP\Documents\GitHub\aplikacjadonauki\aplikacja do nauki\djangogirls\mysite\blog\templates\blog\post_list.html'> Strona Główna</a></li>
-  <br>
-<ul>
-<li><a href='https://kodologia.pl/kursy/jezyk-sql-wyszukiwanie-danych'> Język SQL</a></li>
-<br>
-<li><a href='https://kodologia.pl/kursy/python-podstawy-programowania'> Python</a></li>
-<br>
-<li><a href='https://kodologia.pl/kursy/python-programowanie-obiektowe'> Python 2</a></li>
-<br>
-<li><a href='https://kodologia.pl/kursy/naucz-sie-css'> CSS</a></li>
-</ul>
+    <ul>
+    <li><a href='https://kodologia.pl/kursy/jezyk-sql-wyszukiwanie-danych'> Język SQL</a></li>
+    <br>
+    <li><a href='https://kodologia.pl/kursy/python-podstawy-programowania'> Python</a></li>
+    <br>
+    <li><a href='https://kodologia.pl/kursy/python-programowanie-obiektowe'> Python 2</a></li>
+    <br>
+    <li><a href='https://kodologia.pl/kursy/naucz-sie-css'> CSS</a></li>
+    </ul>
 </div>
+
+
+    <li><a href='{% url 'post_list' %}'><font face="Times New Roman">Powrót do strony głównej</font></a></li>
+</div>
+  <p><a href='{% url 'autorzy' %}'><font face="Times New Roman">Autorzy</p></font>
+
 </body>
-</html>

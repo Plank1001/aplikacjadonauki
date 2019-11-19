@@ -5,3 +5,5 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 def inna(request):
     return render(request, 'blog/inna.html')
+def autorzy(request):
+    return render(request, 'blog/autorzy.html')
