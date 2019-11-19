@@ -1,26 +1,30 @@
 {% load static %}
 <html>
 <head>
-       <title>
-       Nauka programowania</title>
+<style>
+body {
+  background-color: lightblue;
+}
+</style>
+       <title>Nauka programowania</title>
        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-   </head>
+</head>
 <body>
-  <div>
-
-          <center><h1><a>Naucz się programowania</a></h1></center>
-
-    <center><p><font face="Arial">Aplikacja do nauki programowania</p></font></center>
-    <center><img src="http://sowaprogramuje.pl/wp-content/uploads/2017/07/czy-prog-jest-trudne-min.jpg" width="350" height="351" alt=""></center>
-  </div>
-  <div>
-  <br>
-  <center><a href='{% url 'inna' %}'>Zaczynamy</a></li></center>
-  <br>
+<div>
+    <center><img src="https://cdn.bulldogjob.com/system/readables/covers/000/001/832/large_thumb/czy_programowanie_jest_trudne3.png" width="500" height="150" alt=""></center>
+  <center><h2><a>Naucz się programowania</a></h2></center>
+  <center><p><font face="Arial">Aplikacja do nauki programowania</p></font></center>
 
 </div>
+
+<div>
+  <br>
+  <center><h1><a href='{% url 'inna' %}'>Zaczynamy!</a></li></center></h1>
+  <br>
+</div>
+
 </body>
 </html>

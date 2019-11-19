@@ -1,32 +1,35 @@
 {% load static %}
 <html>
 <head>
+<style>
+
+#p1 {background-color:#ff6699;}
+#p2 {background-color:#99ff66;}
+#p3 {background-color:#33ccff;}
+#p4 {background-color:#aa80ff;}
+#p5 {background-color:#ffff66;}
+</style>
        <title>
        Nauka programowania</title>
    </head>
 
 <body>
-<style>
-{background-color: coral;
-}
-
-</style>
-
+  <center><img src="https://www.proformat.pl/wp-content/uploads/Popularne-j%C4%99zyki-programowania.jpg" width="600" height="400" alt=""></center>
   <div>
     <ul>
-    <li><a href='https://kodologia.pl/kursy/jezyk-sql-wyszukiwanie-danych'> Język SQL</a></li>
+    <center><a href='https://kodologia.pl/kursy/jezyk-sql-wyszukiwanie-danych'><p id="p1">Język SQL</a></p></center>
     <br>
-    <li><a href='https://kodologia.pl/kursy/python-podstawy-programowania'> Python</a></li>
+    <center><a href='https://kodologia.pl/kursy/python-podstawy-programowania'><p id="p2"> Python</a></p></center>
     <br>
-    <li><a href='https://kodologia.pl/kursy/python-programowanie-obiektowe'> Python 2</a></li>
+    <center><a href='https://kodologia.pl/kursy/python-programowanie-obiektowe'><p id="p3"> Python 2</a></p></center>
     <br>
-    <li><a href='https://kodologia.pl/kursy/naucz-sie-css'> CSS</a></li>
+    <center><a href='https://kodologia.pl/kursy/naucz-sie-css'><p id="p4"> CSS</a></p></center>
     </ul>
 </div>
 
 
-    <li><a href='{% url 'post_list' %}'><font face="Times New Roman">Powrót do strony głównej</font></a></li>
-</div>
+    <p><a href='{% url 'post_list' %}'><font face="Times New Roman">Powrót do strony głównej</font></a></p>
+<br>
   <p><a href='{% url 'autorzy' %}'><font face="Times New Roman">Autorzy</p></font>
 
 </body>
