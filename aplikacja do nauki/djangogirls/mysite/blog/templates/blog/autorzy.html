@@ -1,13 +1,19 @@
 {% load static %}
 <html>
 <head>
+  <style>
+
+  #p1 {background-color:#ff6699;}
+  #p2 {background-color:#99ff66;}
+  #p3 {background-color:#33ccff;}
+  </style>
 <title>Autorzy</title>
 </head>
 <body>
   <div>
-<ul>
-    <li>Olga Szczepankiewicz</li>
-    <li>Weronika Plank</li>
+    <center><p id="p1">AUTORZY</p></center>
+    <center><p id="p2">Olga Szczepankiewicz</p></center>
+    <center><p id="p3">Weronika Plank</p></center>
 </div>
   <li><a href='{% url 'post_list' %}'><font face="Times New Roman">Powrót do strony głównej</font></a></li>
 </body>
