@@ -2,36 +2,48 @@
 <html>
 <head>
 <style>
+.block {
+height: 45px;
+margin: 5px;
+padding: 30px;
+background: salmon;
+}
+{background-color:#ff6699;
+}
 
-#p1 {background-color:#ff6699;}
-#p2 {background-color:#99ff66;}
-#p3 {background-color:#33ccff;}
-#p4 {background-color:#aa80ff;}
-#p5 {background-color:#ffff66;}
 </style>
-       <title>
+   <title>
        Nauka programowania</title>
    </head>
 
 <body>
   <center><img src="https://www.proformat.pl/wp-content/uploads/Popularne-j%C4%99zyki-programowania.jpg" width="600" height="400" alt=""></center>
-  <div>
+<div class="container">
     <ul>
-    <center><a href='https://kodologia.pl/kursy/jezyk-sql-wyszukiwanie-danych'><p id="p1">Język SQL</a></p></center>
+    <div class="block"><font face="Courier New"><center><a href='https://kodologia.pl/kursy/jezyk-sql-wyszukiwanie-danych'><button>Język SQL</button></font></a></p></center></div>
     <br>
-    <center><a href='https://kodologia.pl/kursy/python-podstawy-programowania'><p id="p2"> Python</a></p></center>
+    <div class="block"><font face="Courier New"><center><a href='https://kodologia.pl/kursy/python-podstawy-programowania'><button>Python</button></a></font></p></center></div>
     <br>
-    <center><a href='https://kodologia.pl/kursy/python-programowanie-obiektowe'><p id="p3"> Python 2</a></p></center>
+    <div class="block"><font face="Courier New"><center><a href='https://kodologia.pl/kursy/python-programowanie-obiektowe'><button>Python 2</button></font></a></p></center></div>
     <br>
-    <center><a href='https://kodologia.pl/kursy/naucz-sie-css'><p id="p4"> CSS</a></p></center>
+    <div class="block"><font face="Courier New"><center><a href='https://kodologia.pl/kursy/naucz-sie-css'><button>CSS</button></font></a></p></center></div>
+    <br>
+    <div class="block"><font face="Courier New"><center><a href='https://kodologia.pl/kursy/java-kurs-podstawowy'><button>Java</button></font></a></p></center></div>
+    <br>
+    <div class="block"><font face="Courier New"><center><a href='https://kodologia.pl/kursy/jezyk-javascript-podstawy'><button>JavaScript</button></font></a></p></center></div>
+    <br>
+    <div class="block"><font face="Courier New"><center><a href='https://kodologia.pl/kursy/tworzenie-stron-internetowych-w-html'><button>HTML</button></font></a></p></center></div>
+    <br>
+    <div class="block"><font face="Courier New"><center><a href='https://kodologia.pl/kursy/podstawy-jezyka-c'><button>C++</button></font></a></p></center></div>
     </ul>
 </div>
+
 <center><a href='http://www.counterliczniki.com'>licznik odwiedzin strony</a> <script type='text/javascript' src='https://www.counterliczniki.com/auth.php?id=166d352ca042d9f2c0ee2f98a67ffeba28c9c248'></script>
 <script type="text/javascript" src="https://www.counterliczniki.com/pl/home/counter/602841/t/7"></script></center>
 
+    <p><font face="Courier New"><a href='{% url 'post_list' %}'>Powrót do strony głównej</font></a></p>
 
-    <p><a href='{% url 'post_list' %}'><font face="Times New Roman">Powrót do strony głównej</font></a></p>
-<br>
-  <p><a href='{% url 'autorzy' %}'><font face="Times New Roman">Autorzy</p></font>
+  <p><font face="Courier New"><a href='{% url 'autorzy' %}'>Autorzy</p></font>
+
 
 </body>
